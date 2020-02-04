@@ -18,16 +18,16 @@ Memory-efficient tree nodes in Perl: <pm:Tree::Node>.
 
 **Creating**
 
-<pm:Tree::FromStruct>, <pm:Tree::FromText>, <pm:Tree::FromTextLines>,
+<pm:Tree::From::Struct>, <pm:Tree::From::Text>, <pm:Tree::From::TextLines>,
 <pm:Tree::Create::Callback>, <pm:Tree::Create::Callback::ChildrenPerLevel>,
-<pm:Tree::Create::Size>, <pm:Tree::FromFS>.
+<pm:Tree::Create::Size>, <pm:Tree::From::FS>.
 
 <pm:Data::Random::Tree>.
 
 
 **Visualizing as text**
 
-<pm:Tree::ToText>, <pm:Tree::ToTextLines>.
+<pm:Tree::To::Text>, <pm:Tree::To::TextLines>.
 
 
 **Visualizing as graphic**
@@ -37,7 +37,7 @@ TODO
 
 **Other modules**
 
-<pm:Tree::ToFS>.
+<pm:Tree::To::FS>.
 
 Special kinds of trees: TODO.
 
@@ -53,7 +53,10 @@ our $LIST = {
     description => $text,
     tags => ['task'],
     entries => [
-        map { +{module=>$_} } $text =~ /<pm:(\w+(?:::\w+)+)>/g
+        map { +{module=>$_} }
+            do { my %seen; grep { !$seen{$_}++ }
+                 ($text =~ /<pm:(\w+(?:::\w+)+)>/g)
+             }
     ],
 };
 
