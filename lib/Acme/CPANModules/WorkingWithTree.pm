@@ -1,6 +1,8 @@
 package Acme::CPANModules::WorkingWithTree;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 my $text = <<'_';
@@ -30,7 +32,7 @@ Memory-efficient tree nodes in Perl: <pm:Tree::Node>.
 <pm:Tree::To::Text>, <pm:Tree::To::TextLines>.
 
 
-**Visualizing as graphic**
+**Visualizing as graphics**
 
 TODO
 
@@ -45,6 +47,17 @@ Special kinds of trees: TODO.
 **Roles**
 
 <pm:Role::TinyCommons::Tree>.
+
+
+**Modules that produce or work with Role::TinyCommons::Tree-compliant tree objects**
+
+<pm:Org::Parser>, <pm:Org::Parser::Tiny>.
+
+<pm:Tree::Dump>.
+
+<pm:Data::CSel> and its related modules: <pm:App::htmlsel>, <pm:App::jsonsel>,
+<pm:App::orgsel>, <pm:App::podsel>, <pm:App::ppisel>, <pm:App::yamlsel>,
+<pm:App::CSelUtils>.
 
 _
 
