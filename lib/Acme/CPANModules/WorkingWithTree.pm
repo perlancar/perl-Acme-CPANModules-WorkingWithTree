@@ -1,7 +1,12 @@
 package Acme::CPANModules::WorkingWithTree;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
+
+use strict;
+use Acme::CPANModulesUtil::Misc;
 
 my $text = <<'_';
 **Basics**
@@ -52,10 +57,9 @@ our $LIST = {
     summary => 'Working with tree data structure in Perl',
     description => $text,
     tags => ['task'],
-    entries => [
-        map { +{module=>$_} } $text =~ /<pm:(\w+(?:::\w+)+)>/g
-    ],
 };
+
+Acme::CPANModulesUtil::Misc::populate_entries_from_module_links_in_description;
 
 1;
 # ABSTRACT:
