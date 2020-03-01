@@ -23,26 +23,28 @@ Memory-efficient tree nodes in Perl: <pm:Tree::Node>.
 
 **Creating**
 
-<pm:Tree::FromStruct>, <pm:Tree::FromText>, <pm:Tree::FromTextLines>,
+<pm:Tree::From::Struct>, <pm:Tree::From::Text>, <pm:Tree::From::TextLines>,
 <pm:Tree::Create::Callback>, <pm:Tree::Create::Callback::ChildrenPerLevel>,
-<pm:Tree::Create::Size>, <pm:Tree::FromFS>.
+<pm:Tree::Create::Size>, <pm:Tree::From::FS>.
 
 <pm:Data::Random::Tree>.
 
 
 **Visualizing as text**
 
-<pm:Tree::ToText>, <pm:Tree::ToTextLines>.
+<pm:Tree::To::Text>, <pm:Tree::To::TextLines>.
 
 
-**Visualizing as graphic**
+**Visualizing as graphics**
 
 TODO
 
 
 **Other modules**
 
-<pm:Tree::ToFS>.
+<pm:Tree::To::FS>.
+
+<pm:Tree::Shell>.
 
 Special kinds of trees: TODO.
 
@@ -50,6 +52,17 @@ Special kinds of trees: TODO.
 **Roles**
 
 <pm:Role::TinyCommons::Tree>.
+
+
+**Modules that produce or work with Role::TinyCommons::Tree-compliant tree objects**
+
+<pm:Org::Parser>, <pm:Org::Parser::Tiny>.
+
+<pm:Tree::Dump>.
+
+<pm:Data::CSel> and its related modules: <pm:App::htmlsel>, <pm:App::jsonsel>,
+<pm:App::orgsel>, <pm:App::podsel>, <pm:App::ppisel>, <pm:App::yamlsel>,
+<pm:App::CSelUtils>.
 
 _
 
