@@ -23,9 +23,10 @@ Memory-efficient tree nodes in Perl: <pm:Tree::Node>.
 
 **Creating**
 
-<pm:Tree::From::Struct>, <pm:Tree::From::Text>, <pm:Tree::From::TextLines>,
-<pm:Tree::Create::Callback>, <pm:Tree::Create::Callback::ChildrenPerLevel>,
-<pm:Tree::Create::Size>, <pm:Tree::From::FS>.
+<pm:Tree::From::Struct>, <pm:Tree::From::ObjArray>, <pm:Tree::From::Text>,
+<pm:Tree::From::TextLines>, <pm:Tree::Create::Callback>,
+<pm:Tree::Create::Callback::ChildrenPerLevel>, <pm:Tree::Create::Size>,
+<pm:Tree::From::FS>.
 
 <pm:Data::Random::Tree>.
 
@@ -33,6 +34,9 @@ Memory-efficient tree nodes in Perl: <pm:Tree::Node>.
 **Visualizing as text**
 
 <pm:Tree::To::Text>, <pm:Tree::To::TextLines>.
+
+<pm:Text::Tree::Indented>. This module accepts nested array of strings instead
+of tree object.
 
 
 **Visualizing as graphics**
@@ -51,7 +55,7 @@ Special kinds of trees: TODO.
 
 **Roles**
 
-<pm:Role::TinyCommons::Tree>.
+<pm:Role::TinyCommons::Tree::Node>, <pm:Role::TinyCommons::Tree::NodeMethods>.
 
 
 **Modules that produce or work with Role::TinyCommons::Tree-compliant tree objects**
