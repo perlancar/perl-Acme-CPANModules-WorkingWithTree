@@ -1,12 +1,13 @@
 package Acme::CPANModules::WorkingWithTree;
 
+use strict;
+use warnings;
+use Acme::CPANModulesUtil::Misc;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use strict;
-use Acme::CPANModulesUtil::Misc;
 
 my $text = <<'_';
 **Basics**
@@ -58,7 +59,7 @@ Special kinds of trees: TODO.
 <pm:Role::TinyCommons::Tree::Node>, <pm:Role::TinyCommons::Tree::NodeMethods>.
 
 
-**Modules that produce or work with Role::TinyCommons::Tree-compliant tree objects**
+**Modules that produce or work with Role::TinyCommons::Tree::Node-compliant tree objects**
 
 <pm:Org::Parser>, <pm:Org::Parser::Tiny>.
 
