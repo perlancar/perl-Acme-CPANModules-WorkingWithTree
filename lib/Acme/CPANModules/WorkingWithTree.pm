@@ -72,7 +72,7 @@ Special kinds of trees: TODO.
 _
 
 our $LIST = {
-    summary => 'Working with tree data structure in Perl',
+    summary => 'List of modules to work with tree data structure',
     description => $text,
     tags => ['task'],
 };
